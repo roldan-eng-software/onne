@@ -1,0 +1,14 @@
+# Configurações locais do editor / agente — não fazem parte do site
+.opencode/
+.playwright-mcp/
+.vscode/
+.idea/
+
+# Rascunhos e screenshots de teste
+*.png
+!assets/**/*.png
+
+# Sistema operacional
+Thumbs.db
+Desktop.ini
+.DS_Store
