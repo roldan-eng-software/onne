@@ -1,0 +1,22 @@
+FOTOS DESTA PASTA
+=================
+
+Substitua cada arquivo mantendo EXATAMENTE o mesmo nome e formato (.jpg).
+Nada precisa ser alterado no index.html.
+
+  produto-mini-4-pro.jpg   900 x 700    DJI Mini 4 Pro
+  produto-air-3s.jpg       900 x 700    DJI Air 3S
+  produto-mavic-4-pro.jpg  900 x 700    DJI Mavic 4 Pro
+  produto-neo.jpg          900 x 700    DJI Neo
+  produto-mavic-3e.jpg     900 x 700    DJI Mavic 3 Enterprise
+  produto-matrice-4.jpg    900 x 700    DJI Matrice 4 Series
+  produto-dock-3.jpg       900 x 700    DJI Dock 3
+  produto-agras-t50.jpg    900 x 700    DJI AGRAS T50
+  produto-agras-t100.jpg   900 x 700    DJI AGRAS T100
+
+Dicas:
+- Use fotos no formato paisagem (largura maior que altura).
+- Fundo claro (branco ou cinza claro) combina melhor com a identidade da ONNE.
+- Mantenha o arquivo abaixo de ~250 KB (exporte com qualidade 80 no Photoshop/GIMP).
+- Se possível, prefira fotos reais dos produtos na loja: converte muito mais que
+  render/imagem de catálogo.
