@@ -84,25 +84,37 @@ Não precisa mudar nada no código — os nomes em `index.html` já são esses.
 
 ---
 
-## 5. Publicar no GitHub Pages
+## 5. GitHub Pages — já publicado
+
+| | |
+|---|---|
+| Repositório | https://github.com/roldan-eng-software/onne |
+| **Site no ar** | **https://roldan-eng-software.github.io/onne/** |
+| Branch publicada | `main` (raiz do repositório) |
+| HTTPS | forçado (automático pelo GitHub) |
+
+Configuração: **Settings → Pages → Source: Deploy from a branch → `main` / `/ (root)`**.
+O `.nojekyll` já está incluído para o GitHub Pages não processar os arquivos com Jekyll.
+
+### Como atualizar o site depois de uma alteração
 
 ```powershell
 cd "C:\Users\rolda\Documents\Codigos\J-Embare\ONNE"
-git init
 git add .
-git commit -m "Landing page ONNE"
-git branch -M main
-git remote add origin https://github.com/SEU-USUARIO/SEU-REPO.git
-git push -u origin main
+git commit -m "Descreva aqui o que mudou"
+git push
 ```
 
-Depois, no GitHub: **Settings → Pages → Source: Deploy from a branch → Branch: `main` / root → Save**.
-A página fica em `https://SEU-USUARIO.github.io/SEU-REPO/`.
+O GitHub republica sozinho em ~1 minuto. Nada de build, nada de instalar dependência.
 
-O arquivo `.nojekyll` já está incluído para o GitHub Pages não processar os arquivos com Jekyll.
+> **Atenção:** o `.gitignore` ignora a pasta `.opencode/` (configurações locais do editor). Ela não vai para o site — e não deve ir.
 
-### Domínio próprio
-Se registrarem `somosonne.com.br`, crie um arquivo `CNAME` na raiz com o domínio dentro, aponte o DNS para o GitHub Pages e ajuste o `<link rel="canonical">` no `<head>`.
+### Domínio próprio (opcional, mais à frente)
+Se registrarem `somosonne.com.br`:
+1. Crie um arquivo `CNAME` na raiz do repositório com o domínio dentro (só isso, uma linha).
+2. No DNS, aponte para o GitHub Pages (registros `A` para os IPs do GitHub + `CNAME` de `www`).
+3. Marque **Enforce HTTPS** em Settings → Pages.
+4. Troque a `<link rel="canonical">` e as URLs de `og:image` / `twitter:image` / JSON-LD no `index.html` para o domínio novo — hoje elas apontam para a URL do GitHub Pages.
 
 ---
 
